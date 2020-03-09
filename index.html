@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>БМИ калкулатор</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500i,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+	<div id="main-container">
+	
+		<div id="header">
+		
+			<div id="strong-container">
+				<h1>БМИ</h1>
+				<strong id="bmiOut">0</strong>
+			</div>
+			
+			<div id="stanje-container">
+				<p>Стање:</p>
+				<em id="status"></em>
+			</div>
+			
+			<h2>Подаци:</h2>
+			
+		</div>
+
+		
+		<div class="slidecontainer">
+
+			<!-- input za visinu -->
+			<p>Висина: <span id="visinaOut"></span></p>
+			<input type="range" min="140" max="240" value="170" id="visinaIn">
+			
+			<!-- input za tezinu -->
+			<p>Тежина: <span id="tezinaOut"></span></p>
+			<input type="range" min="40" max="200" value="70" id="tezinaIn">
+			
+		</div>
+		
+		<div id="button-container">
+			<button type="button" id="submitBtn">Израчунај</button>
+		</div>
+		
+	</div>
+		
+	<script src="bmi.js"></script>
+</body>
+
+</html>
